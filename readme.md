@@ -32,8 +32,8 @@ LoginPage
 # Node_Modules
 ## EJS
 
-<pre>
 根目錄的網頁用views/index.ejs渲染  
+<pre>
 index.js
 app.set('views', 'views/');
 app.set('view engine', 'ejs');
@@ -42,10 +42,8 @@ app.get('/', function(req, res, next) {
         title : 'ejs'
     });
 });
-
-index.ejs 所有<%= title %>都會變成ejs
-<h1><%= title %></h1>
 </pre>
+index.ejs 所有<%= title %>都會變成ejs  
 
 ## body-parser
 所有app.get的網站  
@@ -55,7 +53,7 @@ app.use(bodyParser.json());
 app.get('/', function(req, res,){});  
 </pre>
 ## express-session
-session 有幾個參數
+session 有幾個參數  
 <pre>
 app.use(session({
     name: identityKey,
